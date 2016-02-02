@@ -1,2 +1,2 @@
-# GOLang_Fibbonaci
+# GOLang_Fibonacci
 Learning GoLang
