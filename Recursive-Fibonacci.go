@@ -13,7 +13,7 @@ func fibo(n int) int {
 
 func main() {
 
-	for i := 0; i < 25; i++ {
+	for i := 0; i < 45; i++ {
 		fmt.Println(fibo(i))
 	}
 }
