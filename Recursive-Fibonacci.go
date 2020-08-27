@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 // fibonacci in GOlang
 // fibo function returns Recursive Solution
@@ -12,8 +15,10 @@ func fibo(n int) int {
 }
 
 func main() {
+	start := time.Now()
 
 	for i := 0; i < 45; i++ {
 		fmt.Println(fibo(i))
 	}
+	fmt.Println(time.Since(start))
 }
