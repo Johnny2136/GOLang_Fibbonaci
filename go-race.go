@@ -22,20 +22,26 @@ func fiboRec(n int) int {
 }
 
 func main() {
-	start1 := time.Now()
+	t1 := time.Now()
 	n := fiboIt()
 	//45 is the largest int for GOLan but we will use 25
-	for i := 0; i < 40; i++ {
+	for i := 0; i < 30; i++ {
 		fmt.Println(n())
 	}
-	fmt.Println("Iterative func time", time.Since(start1))
-	start2 := time.Now()
+	itTime := time.Since(t1)
+	fmt.Println("Iterative func time", itTime)
 
-	for i := 0; i < 40; i++ {
+	t2 := time.Now()
+
+	for i := 0; i < 30; i++ {
 		fmt.Println(fiboRec(i))
 	}
-	fmt.Println("Recursive func time", time.Since(start2))
-	if
-
-
-}
+	recTime := time.Since(t2)
+	fmt.Println("Recursive func time", recTime)
+	 // Calling Sub method 
+    //subtract := (recTime)-(itTime) 
+  
+	// Prints output 
+	fmt.Println("Iterative func time", itTime)
+    //fmt.Printf("Iterative func wone by = %v\n", subtract) 	
+	}
