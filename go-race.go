@@ -28,7 +28,7 @@ func main() {
 	t1 := time.Now()
 	n := fiboIt()
 	//45 is the largest int for GOLan but we will use 25
-	for i := 0; i < 45; i++ {
+	for i := 0; i < 25; i++ {
 		fmt.Println(n())
 	}
 	itTime := time.Since(t1)
@@ -36,7 +36,7 @@ func main() {
 
 	t2 := time.Now()
 
-	for i := 0; i < 45; i++ {
+	for i := 0; i < 25; i++ {
 		fmt.Println(fiboRec(i))
 	}
 	recTime := time.Since(t2)
