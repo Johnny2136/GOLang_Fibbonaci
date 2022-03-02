@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-// fibonacci in GOlang
+// Fibonacci in GOlang analysis of Recursive vs Iterative Algorithms:
 // fibo function returns Iterative version
 func fiboIt() func() int {
 	F1 := 0 //Seed value
@@ -27,7 +27,7 @@ func fiboRec(n int) int {
 func main() {
 	t1 := time.Now()
 	n := fiboIt()
-	//45 is the largest int for GOLan but we will use 25
+	//45 is the largest int for GOLan type int but we will use 25
 	for i := 0; i < 25; i++ {
 		fmt.Println(n())
 	}
@@ -41,10 +41,9 @@ func main() {
 	}
 	recTime := time.Since(t2)
 	fmt.Println("Recursive func time", recTime)
-	// Calling Sub method
-	//subtract := (recTime)-(itTime)
-
 	// Prints output
 	fmt.Println("Iterative func time", itTime)
-	//fmt.Printf("Iterative func wone by = %v\n", subtract)
+	subtract := (recTime)-(itTime)
+	fmt.Printf("Iterative func wone by = %v\n", subtract)	
+	
 }
