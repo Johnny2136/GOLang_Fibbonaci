@@ -43,7 +43,7 @@ func main() {
 	fmt.Println("Recursive func time", recTime)
 	// Prints output
 	fmt.Println("Iterative func time", itTime)
-	subtract := (recTime)-(itTime)
-	fmt.Printf("Iterative func wone by = %v\n", subtract)	
-	
+	subtract := (recTime) - (itTime)
+	fmt.Printf("Iterative func faster than Recursive func by = %v\n", subtract)
+
 }
